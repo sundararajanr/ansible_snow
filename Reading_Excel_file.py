@@ -18,7 +18,7 @@ try:
      
      print("subprocess command started")
      #subprocess.call('/usr/bin/ansible-playbook Change_creation.yml',shell="True",cwd="/var/lib/awx/projects/_18__snow_project/")
-     subprocess.Popen('ansible-playbook Change_creation.yml',shell="True",cwd="/var/lib/awx/projects/_18__snow_project")
+     subprocess.Popen('ansible-playbook kri.yml',shell="True",cwd="/var/lib/awx/projects/_18__snow_project")
      
      #call(["ansible-playbook", "/var/lib/awx/projects/_18__snow_project/Change_creation.yml"])
      

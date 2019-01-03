@@ -1,0 +1,19 @@
+- hosts: localhost
+  tasks:
+  - name: Create an incident
+    register: new_change_request
+    snow_record:
+      data:
+        priority: 2
+        severity: 3
+        short_description: !!python/unicode 'l'
+        start_date: 4-1- 2018
+      instance: dev56815
+      password: 2tzIQwLNgDe7
+      state: present
+      table: change_request
+      username: admin
+  - debug: var=new_change_request.record.number
+  - debug: var=new_change_request.record.opened_at
+
+
