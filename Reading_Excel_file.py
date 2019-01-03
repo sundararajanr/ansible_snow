@@ -27,7 +27,7 @@ try:
      
      #cmd = "git --version"
      #print(os.chdir('/var/lib/awx/projects/_18__snow_project/'))
-     print(os.system('ls'))
+     print(os.system('pwd'))
      #print("testing ...")
      
      #returned_value = os.system(cmd)  # returns the exit code in unix
